@@ -93,7 +93,7 @@
     <Content Include="FormSamples\ContestEntry.html" />
     <Content Include="FormSamples\CreateBankAccount.html" />
     <Content Include="FormSamples\Default.htm" />
-    <Content Include="FormSamples\JobApplication.html" />
+    <None Include="FormSamples\JobApplication.cshtml" />
     <Content Include="FormSamples\StudentEnrollment.html" />
     <Content Include="packages.config" />
     <Content Include="index.cshtml" />

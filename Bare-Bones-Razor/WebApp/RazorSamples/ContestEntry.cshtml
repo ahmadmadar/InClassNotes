@@ -44,6 +44,15 @@
         <p>Please fill out the following form to enter the contest. This contest is only available to residents in Western Canada.</p>
         @{ 
             // Razor block of code that will process the form input
+            if (IsPost)
+            {
+                string firstName = Request.Form["firstName"];
+                string lastName = Request.Form["lastName"];
+                string streetAddress1 = Request.Form["streetAddress1"];
+                string streetAddress2 = Request.Form["streetAddress2"];
+                string city = Request.Form["city"];
+
+            }
         }
         <form action="ContestEntry.html">
             <fieldset>
