@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>@Page.Title</title>
+    <meta name="viewport" content="device-width, initial-scale=1.0" />
+    <link href="@Href("/Content/bootstrap.min.css")" rel="stylesheet" media="screen" />
+    @RenderSection("head", required: false)
+</head>
+<body>
+    <div class="navbar navbar-default">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">CPSC1517</a>
+                <ul class="nav navbar-nav">
+                    <li><a href="@Href("/index.cshtml")">Home</a></li>
+                    <li><a href="@Href("/ExercisePages/xxxxxx.cshtml")">Exercise 01</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="jumbotron">
+        <div class="container">
+            <h1>@RenderSection("pagetitle")</h1>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            @RenderBody()
+        </div>
+    </div>
+</body>
+</html>
