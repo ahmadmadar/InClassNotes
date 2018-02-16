@@ -144,7 +144,7 @@
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
     <Content Include="index.cshtml" />
-    <Content Include="ExcercisePages\Exercise01.cshtml" />
+    <Content Include="ExercisePages\Exercise01.cshtml" />
     <None Include="scripts\jquery-1.9.1.intellisense.js" />
     <Content Include="scripts\bootstrap.js" />
     <Content Include="scripts\bootstrap.min.js" />
