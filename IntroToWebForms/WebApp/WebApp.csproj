@@ -141,6 +141,7 @@
     <Content Include="Images\User Registration %28Alternate 263h%29.png" />
     <Content Include="Images\User Registration.png" />
     <Content Include="Practice\Default.aspx" />
+    <Content Include="Practice\MovieLibrary.aspx" />
     <Content Include="Sandbox.aspx" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -279,6 +280,13 @@
     </Compile>
     <Compile Include="Practice\Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Practice\MovieLibrary.aspx.cs">
+      <DependentUpon>MovieLibrary.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Practice\MovieLibrary.aspx.designer.cs">
+      <DependentUpon>MovieLibrary.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Sandbox.aspx.cs">
