@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="MovieLibrary.aspx.cs" Inherits="WebApp.Practice.MovieLibrary1" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="MovieLibrary.aspx.cs" Inherits="WebApp.Practice.MovieLibrary" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
     <div class="page-header">
         <h1>Movie Library</h1>
@@ -14,7 +14,7 @@
                 <br />
 
                 <asp:Label ID="Label2" runat="server" AssociatedControlID="Year">Year</asp:Label>
-                <asp:TextBox ID="Year" runat="server"></asp:TextBox>
+                <asp:TextBox ID="Year" runat="server" MaxLength="4"></asp:TextBox>
                 <br />
 
                 <asp:Label ID="Label3" runat="server" AssociatedControlID="Media">Media</asp:Label>
@@ -50,16 +50,28 @@
                 <asp:Button ID="Search" runat="server" Text="Search Online" />
                 <br />
               </fieldset>
+             <p>
+                <asp:Button ID="Submit" runat="server" Text="Add to Library"  OnClick="Submit_Click"/>
+            </p>
         </div>
             
-            <p>
-                <asp:Button ID="Submit" runat="server" Text="Add to Library" />
-            </p>
+           
         </div>
         <div class="col-md-6">
             <asp:Label ID="MessageLabel" runat="server" />
             <div>
-                
+                <asp:Label ID="Label7" runat="server" />
+                <asp:GridView ID="MovieLibraryGridView" runat="server">
+                    <EmptyDataTemplate>
+                        
+                    </EmptyDataTemplate>
+                </asp:GridView>
+                 <%--Validation Controls--%>
+                <asp:ValidationSummary ID="ValidationSummary" runat="server" CssClass="alert alert-warning alert-dismissible" HeaderText="Please fix the following problems before sumitting this form." />
+                <asp:RequiredFieldValidator ID="ValidateTitle" runat="server" Display="None" ControlToValidate="MovieTitle" ErrorMessage="A movie title is required."/>
+                <asp:RequiredFieldValidator ID="ValitateYear" runat="server" Display="None" ControlToValidate="Year" ErrorMessage="A year is required." />
+                <asp:RangeValidator ID="ValidateYear1" runat="server" Display="None" ControlToValidate="Year" ErrorMessage="Year must be since 1900" MinimumValue="1900" MaximumValue="2018" Type="Integer" />
+                <asp:RequiredFieldValidator ID="ValidateMediaType" runat="server" Display="None" ControlToValidate="Media" ErrorMessage="You must indicate the type of media on which the movie is stored."/>
             </div>
         </div>
 </asp:Content>
