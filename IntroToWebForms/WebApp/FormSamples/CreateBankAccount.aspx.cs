@@ -22,9 +22,21 @@ partial class FormSamples_CreateBankAccount
             BankAccountGridView.DataBind();
         }
     }
+    private bool IsDuplicate()
+    {
+        bool duplicate = false;
+        foreach (var item in BankAccounts)
+            if (item.AccountNumber == long.Parse(AccountNumber.Text))
+                duplicate = true;
+        return duplicate;
+    }
     protected void Submit_Click(object sender, EventArgs e)
     {
-        if (IsValid) // IsValid is a property on the page that checks with the validation controls to ensure that the data in the controls passes all the validation.
+        if (IsDuplicate()) // IsValid is a property on the page that checks with the validation controls to ensure that the data in the controls passes all the validation.
+        {
+            MessageLabel.Text = "That account number has already been taken.";
+        }
+        else
         {
             MessageLabel.Text = "Your new bank account will be processed soon.";
             BankAccount data = new BankAccount
@@ -40,7 +52,6 @@ partial class FormSamples_CreateBankAccount
             BankAccountGridView.DataSource = BankAccounts;
             BankAccountGridView.DataBind();
         }
-        // else....
         //      The ValidationSummary will automatically display its contents should the IsValid check return False.
     }
     protected void ClearForm_Click(object sender, EventArgs e)
