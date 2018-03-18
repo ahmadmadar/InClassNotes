@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApp", "WebApp\WebApp.csproj", "{3A709929-EE3C-436C-9676-6D521DE2D09C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IQSchoolEntities", "IQSchoolEntities\IQSchoolEntities.csproj", "{4477E985-0DCF-489D-A84B-062A5A030CA9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IQSchoolSystem", "IQSchoolSystem\IQSchoolSystem.csproj", "{30B99447-0473-4EEE-A5BE-424AF39082FE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3A709929-EE3C-436C-9676-6D521DE2D09C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A709929-EE3C-436C-9676-6D521DE2D09C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3A709929-EE3C-436C-9676-6D521DE2D09C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3A709929-EE3C-436C-9676-6D521DE2D09C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4477E985-0DCF-489D-A84B-062A5A030CA9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4477E985-0DCF-489D-A84B-062A5A030CA9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4477E985-0DCF-489D-A84B-062A5A030CA9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4477E985-0DCF-489D-A84B-062A5A030CA9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{30B99447-0473-4EEE-A5BE-424AF39082FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{30B99447-0473-4EEE-A5BE-424AF39082FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{30B99447-0473-4EEE-A5BE-424AF39082FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{30B99447-0473-4EEE-A5BE-424AF39082FE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
