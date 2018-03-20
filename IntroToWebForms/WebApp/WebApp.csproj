@@ -283,6 +283,7 @@
     <Compile Include="Practice\CdLibrary.aspx.designer.cs">
       <DependentUpon>CdLibrary.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Practice\Classes\Movie.cs" />
     <Compile Include="Practice\Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
