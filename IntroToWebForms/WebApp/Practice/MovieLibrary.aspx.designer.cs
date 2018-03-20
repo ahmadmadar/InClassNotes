@@ -10,7 +10,7 @@
 namespace WebApp.Practice {
     
     
-    public partial class MovieLibrary1 {
+    public partial class MovieLibrary {
         
         /// <summary>
         /// Label1 control.
